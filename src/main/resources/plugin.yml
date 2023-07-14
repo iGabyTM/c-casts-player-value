@@ -1,0 +1,24 @@
+name: CastsPlayerValue
+main: me.gabytm.minecraftc.castsplayervalue.CastsPlayerValuePlugin
+version: "${version}"
+api-version: "1.19"
+
+author: GabyTM
+website: https://gabytm.me/
+
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  playervalue:
+    description: The main command of the plugin
+    subcommands:
+      - reload
+      - set <player> <new-value>
+      - add <player> <value-to-add>
+      - remove <player> <value-to-remove>
+
+permissions:
+  castsplayervalue.admin:
+    default: op
+    description: Permission required to use /playervalue [subcommand]

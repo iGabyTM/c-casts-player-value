@@ -1,0 +1,10 @@
+# The amount of points players start with
+starting-value: 100
+
+# By settings this to false, players will lose value only when
+# they are killed by another player
+lose-value-from-all-death-causes: false
+
+messages:
+  value-lost: "<red>You have died and lost 1 point, remaining points: <amount>."
+  value-gained: "<green>You gained 1 point, total points: <amount>"
